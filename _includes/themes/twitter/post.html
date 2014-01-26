@@ -8,7 +8,13 @@
       <span>{{ page.date | date_to_long_string }}</span>
     </div>
     <div class="content">
+      <h2>Prompt</h2>
+      {{ page.prompt }}
+      <h2>Solution</h2>
       {{ content }}
+      <a href="{{ page.gist }}"><strong>Working solution gist</strong></a><br>
+      <strong>Time for pen and paper solution:</strong> {{ page.time }}<br>
+      <strong>Time for code solution:</strong> {{ page.code_time }}
     </div>
 
   {% unless page.categories == empty %}
