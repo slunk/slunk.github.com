@@ -23,7 +23,7 @@ Original c-like pseudocode:
 The real challenge is to do it in place, and it took me a while to figure out.
 Cells rotate in groups of four.
 Given a cell's location and the size of the matrix, you can determine the other three cells.
-Known a full group, you can swap them using only 4 bytes of temporary storage.
+Knowing a full group, you can swap them using only 4 bytes of temporary storage.
 
 Original c-like pseudocode:
 
